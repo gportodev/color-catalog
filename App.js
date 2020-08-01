@@ -25,7 +25,7 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="auto" />
       
-      <ActivityIndicator size="large" color="#61DBFB" />
+      {/* <ActivityIndicator size="large" color="#61DBFB" />
       {Platform.OS === "ios" && <ProgressViewIOS progress={0.5} color="#3f3f3f"/> }
       {Platform.OS === "android" && 
         <ProgressBarAndroid 
@@ -34,32 +34,44 @@ export default function App() {
           progress={0.5} 
           color="#3f3f3f"
         /> 
-      }
-      <Text style={styles.text}>Open up App.js to start working on your app!</Text>
-      <Text style={[styles.text, styles.selectedText]}>Open up App.js to start working on your app!</Text>
-      <Text style={styles.text}>Open up App.js to start working on your app!</Text>
-      <Button title="Click here!" onPress={onButtonPress}/>
+      } */}
+
+      <Text style={styles.text}>
+        Ra ra Rasputin
+      </Text>
+
+      <Text style={[styles.text, styles.selectedText]}>
+        Russia's greatest love machine 
+      </Text>
+
+      <Text style={styles.text}>
+        It was a shame how he carried on
+      </Text>
+
+      {/* <Button title="Click here!" onPress={onButtonPress}/>
       <Text>Height: {height.toFixed(2)}</Text>
-      <Text>Width: {width.toFixed(2)}</Text>
+      <Text>Width: {width.toFixed(2)}</Text> */}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    justifyContent: 'center',
+    flexDirection: "row",
+    backgroundColor: '#eee',
+    marginTop: 40,
   },
   text: {
-    fontSize: 20,
-    color: "#3f3f3f",
-    backgroundColor: "#DDD",
+    flex: 1,
+    textAlign: "center",
+    fontSize: 15,
+    color: "#ffffff",
+    backgroundColor: "#66c2ff",
     margin: 10,
     padding: 5
   },
   selectedText: {
     backgroundColor: "#3f3f3f",
-    color: "#DDD"
+    color: "#ffffff"
   }
 });
