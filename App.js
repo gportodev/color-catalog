@@ -11,7 +11,13 @@ import {
   Alert,
   Button,
   Platform,
+  Image,
 } from 'react-native';
+
+import img from './assets/img.jpg';
+import bc from './assets/bc.jpg';
+import lk from './assets/lk.jpg';
+import ctm from './assets/ctm.jpg';
 
 const { height, width } = Dimensions.get("window");
 
@@ -36,7 +42,16 @@ export default function App() {
         /> 
       } */}
 
-      <Text style={styles.text}>
+      {/* <Image style={styles.image} source={img} /> */}
+
+      <Image style={styles.image} source={bc} />
+
+      <Image style={styles.image} source={lk} />
+
+      <Image style={styles.image} source={ctm} />
+
+
+      {/* <Text style={styles.text}>
         Ra ra Rasputin
       </Text>
 
@@ -46,20 +61,24 @@ export default function App() {
 
       <Text style={styles.text}>
         It was a shame how he carried on
-      </Text>
+      </Text> */}
 
       {/* <Button title="Click here!" onPress={onButtonPress}/>
       <Text>Height: {height.toFixed(2)}</Text>
       <Text>Width: {width.toFixed(2)}</Text> */}
+
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: "row",
-    backgroundColor: '#eee',
-    marginTop: 40,
+    flexDirection: "column",
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center"
+    // backgroundColor: '#eee',
+    // marginTop: 40,
   },
   text: {
     flex: 1,
@@ -73,5 +92,12 @@ const styles = StyleSheet.create({
   selectedText: {
     backgroundColor: "#3f3f3f",
     color: "#ffffff"
+  },
+  image: {
+    // height: Dimensions.get('window').height - 10,
+    flex: 1,
+    width: Dimensions.get('window').width - 10,
+    // resizeMode: 'center',
+    borderRadius: 15,
   }
 });
