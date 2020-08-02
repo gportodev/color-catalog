@@ -6,13 +6,16 @@ import {
 } from "react-native";
 
 import ColorButton from './components/ColorButton'
+import ColorForm from './components/ColorForm'
 import defaultColors from './data/defaultColors.json'
 
 export default function App() {
   const [backgroundColor, setBackgroundColor] = useState("blue")
 
   return (
-    <FlatList style={[styles.container, { backgroundColor }]} 
+    <>
+      <ColorForm />
+      <FlatList style={[styles.container, { backgroundColor }]} 
       data={defaultColors}
       renderItem={({ item }) => {
         return (
@@ -24,6 +27,8 @@ export default function App() {
         )
       }}
     />
+    </>
+    
       
   );
 }
