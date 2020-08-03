@@ -1,12 +1,13 @@
 {
   "expo": {
     "name": "ColorCatalog",
+    "description": "Catalog your colors!",
     "slug": "ColorCatalog",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/cc-icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/cc-splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
