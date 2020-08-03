@@ -1,4 +1,4 @@
-# color catalog
+# Color Catalog
 
 ### Catalog your colors!
 
