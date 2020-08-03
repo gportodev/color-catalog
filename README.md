@@ -8,3 +8,4 @@
 4. Touch it
 5. That's it! Now you can see color's detail!
 
+Interested? Check out: https://expo.io/@gamonpo/ColorCatalog
