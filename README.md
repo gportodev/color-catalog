@@ -1,5 +1,10 @@
-# learning-react-native
+# color catalog
 
-### React native course from developer and teacher Alex Banks
+### Catalog your colors!
 
-- linkedin: https://www.linkedin.com/in/banksalex/
+1 - Type the color's name
+2 - Press Add
+3 - See your color
+4 - Touch it
+5 - That's it! Now you can see color's detail!
+
