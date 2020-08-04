@@ -15,7 +15,6 @@ export const useColors = () => {
 
   //Load Colors
   useEffect(() => {
-    if(colors.length) return
     loadColors()
   },[])
 
@@ -26,10 +25,17 @@ export const useColors = () => {
   }, [colors])
 
   const addColor = color => { 
-    const newColor= {id: generate(), color}
+    const newColor= { id: generate(), color }
 
     setColors([ newColor, ...colors ])
+
   }
 
-  return { colors, addColor }
+  const removeColor = async(color) => {
+    const selectedColor = colors.filter((item) => item.color !== color)
+
+    setColors(selectedColor)
+  }
+
+  return { colors, addColor, removeColor }
 }

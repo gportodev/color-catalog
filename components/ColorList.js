@@ -10,27 +10,27 @@ import ColorForm from './ColorForm'
 import { useColors } from '../hooks'
 
 export default function ColorList({ navigation }) {
-  const { colors, addColor } = useColors()
+  const { colors, addColor, removeColor } = useColors()
   
   return (
     <>
       <ColorForm onNewColor={addColor}/>
       <FlatList style={[styles.container]} 
-      data={colors}
-      renderItem={({ item }) => {
-        return (
-          <ColorButton 
-            key={item.id} 
-            backgroundColor={item.color} 
-            onPress={() => navigation.navigate("Details", 
-            { color: item.color })}
-          />
-        )
-      }}
-    />
+        data={colors}
+        renderItem={({ item }) => {
+          return (
+            <ColorButton 
+              key={item.id}
+              toRemoveColor={removeColor} 
+              backgroundColor={item.color} 
+              onPress={() => navigation.navigate("Details", 
+              { color: item.color })}
+            />
+          )
+        }}
+      />
+
     </>
-    
-      
   );
 }
 

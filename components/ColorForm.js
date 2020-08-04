@@ -4,6 +4,7 @@ import { StyleSheet, View, TextInput, Button } from 'react-native'
 export default function ColorForm({ onNewColor = f => f }) {
   const [inputValue, setValue] = useState("")
   const input = useRef();
+  
   return (
     <View style={styles.container}>
       <TextInput 
