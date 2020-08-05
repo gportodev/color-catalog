@@ -25,6 +25,7 @@
     },
     "android": {
       "package": "com.dogapi.colorcatalog"
-    }
+    },
+    "githubUrl": "https://github.com/gamonpo/color-catalog"
   }
 }
